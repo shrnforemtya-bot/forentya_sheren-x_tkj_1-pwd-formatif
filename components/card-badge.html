@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Badge</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #fffcf6;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      #top {
+        padding: 15px;
+        background-color: #24619d;
+        color: #f8f5ef;
+        text-align: center;
+      }
+
+      #top h1 {
+        margin: 0 0 15px;
+      }
+
+      #top a {
+        color: white;
+        text-decoration: none;
+        background-color: #e3c470;
+        border-radius: 10px;
+        padding: 5px 16px;
+        font-weight: bold;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .card {
+        position: relative;
+        width: 360px;
+        margin: 30px 0;
+        border: 2px solid #557fa9;
+        border-radius: 12px;
+        background-color: white;
+      }
+
+      .card img {
+        border-radius: 10px;
+        width: 100%;
+        height: 160px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        margin: 12px;
+        color: #2c3e50;
+      }
+
+      .card .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 4px 10px;
+        border-radius: 12px;
+        background-color: #ebc74f;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0 80px;
+      }
+
+      footer a {
+        display: inline-block;
+        padding: 12px 28px;
+        border: 2px solid #557fa9;
+        border-radius: 30px;
+        background-color: #e4eff7;
+        color: #395d97;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .back-to-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 100;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background-color: #557fa9;
+        color: white;
+      }
+
+      .back-to-top:hover {
+        background-color: #2c3e50;
+      }
+
+      main p {
+        color: #305377;
+        width: 360px;
+        margin: 0 0 16px 0;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="top">
+      <h1>Proyek Saya</h1>
+      <a href="#bottom">Ke bawah</a>
+    </header>
+    <main>
+      <div class="card">
+        <img src="../assets/images/badge.jpg" alt="gambar proyek" />
+        <span class="badge">BARU</span>
+        <h3>Website Pribadi Saya</h3>
+      </div>
+      <p>
+        Proyek ini adalah website pribadi yang saya buat sebagai latihan HTML
+        dan CSS di sekolah. Website ini menjadi tempat saya memperkenalkan diri
+        sekaligus menunjukkan hasil belajar saya selama di jurusan TKJ.
+      </p>
+      <p>
+        Isi website ini terdiri dari beberapa halaman, yaitu halaman profil,
+        kumpulan tombol, kartu proyek, dan bagian tentang saya. Setiap halaman
+        dibuat dengan tujuan melatih satu materi CSS yang berbeda.
+      </p>
+      <p>
+        Saya memilih warna biru dan krem sebagai warna utama karena terasa
+        tenang dan nyaman dilihat. Kombinasi ini juga membuat teks tetap mudah
+        dibaca di atas latar yang terang.
+      </p>
+      <p>
+        Setiap halaman memakai cara menulis CSS yang berbeda. Halaman profil
+        memakai CSS inline, halaman tombol memakai CSS internal, dan halaman
+        tentang saya memakai CSS eksternal yang disambungkan lewat tag link.
+      </p>
+      <p>
+        Di halaman kartu, saya belajar memakai box-sizing supaya lebar elemen
+        sesuai dengan hitungan. Tanpa pengaturan itu, padding dan border akan
+        menambah lebar kartu sehingga ukurannya berbeda dari yang saya tulis di
+        CSS.
+      </p>
+      <p>
+        Label BARU di pojok kartu memakai position absolute, sedangkan kartunya
+        memakai position relative. Karena itu label selalu menempel di pojok
+        kanan atas kartu, bukan di pojok halaman.
+      </p>
+      <p>
+        Tombol Ke Atas memakai position fixed, jadi tetap terlihat di pojok
+        kanan bawah layar saat halaman digulir. Saya juga menambahkan z-index
+        supaya tombol tidak tertutup oleh elemen lain.
+      </p>
+      <p>
+        Selama mengerjakan proyek ini, saya belajar bahwa kesalahan kecil bisa
+        membuat kode tidak berjalan. Contohnya lupa titik koma, lupa tanda pagar
+        pada tautan, atau nama id yang berbeda dengan tujuan tautan.
+      </p>
+      <p>
+        Karena itu saya selalu mengecek hasilnya di browser dan memakai Inspect
+        Element untuk melihat ukuran serta gaya yang dipakai. Saya juga
+        merapikan kode dengan Prettier supaya mudah dibaca.
+      </p>
+      <p>
+        Ke depannya saya ingin menambah halaman galeri dan formulir kontak,
+        serta membuat tampilan yang menyesuaikan layar HP. Terima kasih sudah
+        membaca sampai bawah, klik tombol Ke Atas untuk kembali ke bagian paling
+        atas halaman.
+      </p>
+    </main>
+    <footer id="bottom">
+      <a href="../index.html">Kembali ke Beranda</a>
+      <a href="#top" class="back-to-top">Ke Atas</a>
+    </footer>
+  </body>
+</html>
