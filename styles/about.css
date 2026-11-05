@@ -1,0 +1,80 @@
+/* ===== FONT ===== */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf");
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-box h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== LATAR ===== */
+body {
+  margin: 0;
+  background-color: #fff9ec;
+}
+
+#about {
+  background-image: url("../assets/images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  width: 620px;
+  background-color: rgba(251, 244, 232, 0.848);
+  border: 2px solid #caad6f;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+
+footer a {
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: #ccdbe7;
+  border: 2px solid #557fa9;
+  margin-top: 30px;
+}
+
+/* ===== TEKS ===== */
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: rgb(30, 52, 87);
+  text-decoration: none;
+}
+
+.about-box h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.about-box p {
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  color: #2e455c;
+}
+
+.about-box .closing {
+  text-align: right;
+  font-style: italic;
+}
