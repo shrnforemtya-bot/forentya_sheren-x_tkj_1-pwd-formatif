@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #fffcf6;
+      }
+      .layout {
+        display: flex;
+        height: 450px;
+        background-color: rgb(248, 252, 255);
+      }
+      #sidebar {
+        width: 25%;
+        background-color: rgb(41, 69, 109);
+        color: #fffcf6;
+        padding: 20px;
+      }
+      #sidebar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      #sidebar a {
+        color: #fffcf6;
+        text-decoration: none;
+        margin-left: 10px;
+        line-height: 35px;
+      }
+      #sidebar a:hover {
+        color: #e5d1a9;
+      }
+      .main-content {
+        width: 75%;
+        padding: 30px;
+      }
+      .main-content h1 {
+        margin-top: 0;
+      }
+      .main-content h1,
+      .main-content p {
+        color: rgb(42, 78, 132);
+        line-height: 1.6;
+      }
+      footer {
+        text-align: center;
+        padding: 14px;
+        background-color: rgb(167, 167, 167);
+      }
+      footer a {
+        color: #fffcf6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <aside id="sidebar">
+        <h3>Menu</h3>
+        <nav>
+          <a href="">Profil</a>
+          <a href="">Proyek</a>
+          <a href="">Keahlian</a>
+          <a href="">Kontak</a>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <h1>Profil Saya</h1>
+        <p>
+          Saya Forentya Sheren, siswa kelas X TKJ. Saya sedang belajar membuat
+          website dengan HTML dan CSS.
+        </p>
+        <p>
+          Di halaman ini ada ringkasan tentang saya, proyek yang sudah dibuat,
+          dan kemampuan yang sedang dipelajari.
+        </p>
+        <p>
+          Gunakan menu di sebelah kiri untuk berpindah antar bagian portofolio.
+        </p>
+      </main>
+    </div>
+    <footer>
+      <a href="../index.html">Kembali ke Beranda</a>
+    </footer>
+  </body>
+</html>
